@@ -9,7 +9,6 @@ body {
 }
 .headercontainer {
 	height: 100vh;
-	border: 2px solid red;
 	padding: 20px;
 }
 .header {
@@ -111,7 +110,6 @@ body {
 }
 .headerimg img {
 	width: calc(100% - 40px);
-	
 }
 .headerimg .deco {
 	position: absolute;

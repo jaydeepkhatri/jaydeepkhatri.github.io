@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Alata', sans-serif;
+}
+.headercontainer {
+	height: 100vh;
+	border: 2px solid red;
+	padding: 20px;
+}
+.header {
+	max-width: 1000px;
+	width: 100%;
+	margin: auto;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+	
+}
+.uinfo {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	transition: 0.15s;
+}
+.uinfo .title{
+	font-size: 3em;
+	line-height: 1.3em;
+}
+.uinfo .desc {
+	color: #aaa;
+	margin-top: 20px;
+}
+.uinfo .socialmedia {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	height: auto;
+	position: relative;
+	z-index: 1;
+}
+.socialmedia .deco {
+	position: absolute;
+	height: 100px;
+	width: 400px;
+	background: radial-gradient(#47517C44 25%,transparent 25%);
+	background-size: 10px 10px;
+	background-repeat: repeat;
+	top: 20px;
+	left: -50px;
+	z-index: -1;
+	transition: 0.5s;
+}
+.socialmedia .deco:hover{
+	background: radial-gradient(#002fff44 25%,transparent 25%);
+	background-size: 20px 20px;
+}
+.socialmedia .social {
+	background: #000;
+	color: #fff;
+	height: 48px;
+	width: 48px;
+	font-size: 24px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	margin-right: 12px;
+	cursor: pointer;
+	transition: 0.1s;
+}
+.socialmedia .social:hover {
+	transform: scale(1.3) rotate(-20deg);
+}
+.github {
+	background: #181717 !important;
+}
+.github:hover {
+	box-shadow: 0 0 20px #18171790;
+}
+.instagram {
+	background: #E4405F !important;
+}
+.instagram:hover {
+	box-shadow: 0 0 20px #E4405F90;
+}
+.twitter {
+	background: #1DA1F2 !important;
+}
+.twitter:hover {
+	box-shadow: 0 0 20px #1da0f290;
+}
+.mail {
+	background: #aabbcc !important;
+}
+.mail:hover {
+	box-shadow: 0 0 20px #aabbcc90;
+}
+.headerimg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 1;
+}
+.headerimg img {
+	width: calc(100% - 40px);
+	
+}
+.headerimg .deco {
+	position: absolute;
+	height: 400px;
+	width: 100px;
+	background: radial-gradient(#004cff5b 25%,transparent 25%);
+	background-size: 10px 10px;
+	background-repeat: repeat;
+	top: 30%;
+	right: 20px;
+	z-index: -5;
+	transition: 0.5s;
+}
+.headerimg .deco:hover{
+	background: radial-gradient(#0059ffa1 25%,transparent 25%);
+	background-size: 20px 20px;
+}
+
+@media screen and (max-width: 800px) {
+	.header {
+		grid-template-columns: 1fr;
+	}
+	.headerimg {
+		display: none;
+	}
+	.uinfo {
+		align-items: center;
+	}
+}

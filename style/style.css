@@ -73,10 +73,6 @@ body {
 	margin-right: 12px;
 	cursor: pointer;
 	transition: 0.1s;
-	animation: ease-in 0.5s slidedown;
-}
-.socialmedia .social:hover {
-	transform: scale(1.3) rotate(-20deg);
 }
 @keyframes slidedown {
 	0% {
@@ -94,24 +90,36 @@ body {
 }
 .github {
 	background: #181717 !important;
+	transform: translateY(-50px);
+	animation: ease-in 0.5s slidedown forwards, both;
+	animation-delay: 0.1s;
 }
 .github:hover {
 	box-shadow: 0 0 20px #18171790;
 }
 .instagram {
 	background: #E4405F !important;
+	transform: translateY(-50px);
+	animation: ease-in 0.5s slidedown forwards;
+	animation-delay: 0.2s;
 }
 .instagram:hover {
 	box-shadow: 0 0 20px #E4405F90;
 }
 .twitter {
 	background: #1DA1F2 !important;
+	transform: translateY(-50px);
+	animation: ease-in 0.5s slidedown forwards;
+	animation-delay: 0.3s;
 }
 .twitter:hover {
 	box-shadow: 0 0 20px #1da0f290;
 }
 .mail {
 	background: #aabbcc !important;
+	transform: translateY(-50px);
+	animation: ease-in 0.5s slidedown forwards;
+	animation-delay: 0.4s;
 }
 .mail:hover {
 	box-shadow: 0 0 20px #aabbcc90;
@@ -130,7 +138,7 @@ body {
 @keyframes slideup {
 	0% {
 		transform: translateY(-25px);
-		filter: drop-shadow(0 50px 8px rgba(0,0,0,0.1));
+		filter: drop-shadow(0 50px 16px rgba(0,0,0,0.1));
 	}
 	50% {
 		transform: translateY(25px);
@@ -138,7 +146,7 @@ body {
 	}
 	100% {
 		transform: translateY(-25px);
-		filter: drop-shadow(0 50px 8px rgba(0,0,0,0.1));
+		filter: drop-shadow(0 50px 16px rgba(0,0,0,0.1));
 	}
 }
 .headerimg .deco {
